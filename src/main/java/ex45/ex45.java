@@ -11,7 +11,7 @@ public class ex45
     {
         Edit FE = new Edit();
         String out_FileName = getUser_OutputFile_Name();
-        String output = FE.replaceWord();
+        String output = FE.repWord();
         FE.createOutputFile(out_FileName, output);
         in.close();
     }
