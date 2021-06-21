@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+class ex46 {
+   String readFile()
+}
+class WordCount 
+{
+    Map <String, Int> word
+    countWord()
+    sortWordCount()
+    printWordCount()
+    getDot()
+}
+ex46 --|> WordCount
+@enduml
