@@ -31,5 +31,5 @@ class WebGen
     + createIndexHTML() : void
 }
 ex43 --> WebGen
-ex43 --> Input
+ex43 --> ex43Input
 @enduml
