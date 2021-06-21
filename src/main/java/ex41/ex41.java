@@ -10,8 +10,8 @@ public class ex41
     public static void main(String[] args) throws IOException 
     {
         Roster peopleList=new Roster();
-        File ifp = new File("C:\\Users\\simonautran\\IdeaProjects\\autran-cop3330-assignment3\\src\\main\\java\\ex41\\exercise41_input.txt");
-        FileWriter ofp=new FileWriter("C:\\Users\\simonautran\\IdeaProjects\\autran-cop3330-assignment3\\src\\main\\java\\ex41\\exercise41_output.txt");
+        File ifp = new File("src/main/java/ex41/exercise41_input.txt");
+        FileWriter ofp=new FileWriter("src/main/java/ex41/exercise41_output.txt");
         Scanner in=new Scanner(ifp);
         peopleList.readInPeople(in);
         peopleList.sortList();
