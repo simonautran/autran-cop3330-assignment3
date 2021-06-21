@@ -19,7 +19,7 @@ public class Edit
             e.printStackTrace();
         }
     }
-    public String replaceWord() 
+    public String repWord() 
     {
         String input = getInput();
         String output;
