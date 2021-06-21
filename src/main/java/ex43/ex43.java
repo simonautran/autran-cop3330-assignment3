@@ -3,13 +3,12 @@
  *  Copyright 2021 Simon Autran
  */
 package ex43;
-import java.io.IOException;
 public class ex43 
 {
-    public static void main(String[] args) throws IOException 
+    public static void main(String[] args) 
     {
-        WebsiteGenerator websiteGenerator=new WebsiteGenerator();
-        websiteGenerator.scanInfo();
-        websiteGenerator.generateWebsite();
+        Input input = new Input();
+        input.storeValues();
+        WebGen myGen = new WebGen(input.title, input.author, input.flag1, input.flag2);
     }
 }
