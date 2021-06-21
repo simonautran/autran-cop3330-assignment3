@@ -12,8 +12,8 @@ import java.io.*;
 import java.util.ArrayList;
 public class ObjectManager 
 {
-    private ArrayList<Item> itemArrayList=new ArrayList<Item>();
-    public void readItems() throws FileNotFoundException 
+    private ArrayList<Object> objectArrayList=new ArrayList<Object>();
+    public void readObjects() throws FileNotFoundException 
     {
         File input=new File("src/main/java/ex44/exercise44_input.json");
         JsonElement fileElement=JsonParser.parseReader(new FileReader(input));
@@ -22,15 +22,15 @@ public class ObjectManager
         for(JsonElement productElement: jArray){
             Item newItem=new Item();
             JsonObject productJsonObject=productElement.getAsJsonObject();
-            newItem.name=productJsonObject.get("name").getAsString();
-            newItem.price=productJsonObject.get("price").getAsDouble();
-            newItem.quantity=productJsonObject.get("quantity").getAsInt();
-            itemArrayList.add(newItem);
+            newObject.name=productJsonObject.get("name").getAsString();
+            newObject.price=productJsonObject.get("price").getAsDouble();
+            newObject.quantity=productJsonObject.get("quantity").getAsInt();
+            objectArrayList.add(newObject);
         }
     }
-    public boolean findItem(String name)
+    public boolean findObject(String name)
     {
-        for(Item temp:itemArrayList){
+        for(Object temp:objectArrayList){
             if(temp.name.equalsIgnoreCase(name)){
                 System.out.println("Name: "+ temp.name);
                 System.out.println("Price: "+ temp.price);
