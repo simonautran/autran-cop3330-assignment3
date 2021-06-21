@@ -30,6 +30,6 @@ class WebGen
     + createCSSDir() : boolean
     + createIndexHTML() : void
 }
-ex43 o--> WebGen
-ex43 o--> Input
+ex43 --> WebGen
+ex43 --> Input
 @enduml
