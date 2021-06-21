@@ -7,11 +7,11 @@ import java.io.FileNotFoundException;
 import java.util.*;
 public class ex44 {
     public static void main(String[] args) throws FileNotFoundException {
-        ObjectManager itemManager=new ObjectManager();
-        itemManager.readItems();
+        ObjectManager objectManager=new ObjectManager();
+        objectManager.readObjects();
         Scanner in=new Scanner(System.in);
         System.out.print("What is the product name? ");
-        while(!itemManager.findItem(in.nextLine())){
+        while(!objectManager.findObject(in.nextLine())){
             System.out.println("Sorry, that product was not found in our inventory.");
             System.out.print("What is the product name? ");
         }
