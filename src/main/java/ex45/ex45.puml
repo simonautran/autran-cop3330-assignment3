@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ex45 
+{
+    getUser_OutputFile_Name();
+}
+class Edit 
+{
+    public String replaceWord()
+    createFile(output file name, string output)
+}
+ex45 <|-- Edit
+@enduml
