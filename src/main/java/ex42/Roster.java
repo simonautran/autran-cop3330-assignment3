@@ -3,6 +3,7 @@
  *  Copyright 2021 Simon Autran
  */
 package ex42;
+import java.io.FileNotFoundException;
 import java.util.*;
 public class Roster 
 {
