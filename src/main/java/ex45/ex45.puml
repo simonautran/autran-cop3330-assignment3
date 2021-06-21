@@ -7,8 +7,8 @@ class ex45
 }
 class Edit 
 {
-    public String replaceWord()
-    createFile(output file name, string output)
+    public String repWord()
+    createNewFile(output file name, string output)
 }
 ex45 <|-- Edit
 @enduml
