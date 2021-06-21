@@ -3,7 +3,7 @@
 
 class ex44 
 {
-Item: objectList
+Item: ObjectManger
 
 readObject()
 findObject()
@@ -15,6 +15,6 @@ double price
 int quantity
 }
 
-ObjectList->Object
+ObjectManager->Object
 @enduml
 ©
